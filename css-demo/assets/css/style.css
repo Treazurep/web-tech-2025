@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  ---------------Box Sizing-----------------  */
+
+/*  ---------------Global Styles----------------- */
+body {
+  background-color: #ffffff;
+  font-family: "Alan Sans", sans-serif;
+}
+
+header.primary{ /**/
+    background:gold;
+    color:#ffffff
+    text-align:center;
+    text-shadow: 1px 1px #000000;
+}
