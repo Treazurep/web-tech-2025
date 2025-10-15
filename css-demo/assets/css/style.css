@@ -17,6 +17,32 @@ html {
   margin: 40px auto;  
 }
 
+.img-right{
+  float:right;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  margin: 10px auto;
+  border: 3px double #ccc;
+  padding:5px;
+  border-radius:5px;
+}
+
+
+
 *  ---------------Responsive Images----------------- */
 img{
   max-width:100%;
@@ -113,7 +139,7 @@ header.primary nav a:hover{
   gap: 20px;
 }
 
-#content .post{
+#content .post{ /*---"." is a type selector---*/
   box-shadow: 0 4px 8px rgb(0, 0, 0, .6);
   padding: 10px;
   font-size: .8rem;
@@ -124,9 +150,106 @@ header.primary nav a:hover{
   font-size: .6rem;
 }
 
-#content a{
+#content a{ /*--to target hyperlinks in content--*/
   color:gold;
 }
+
+#practice h2{ /*-----practice is*/
+  color: gold;
+  border-bottom:1px dotted #cccccc;
+}
+
+#practice a:link, #practice a:visited {
+  color: gold;
+}
+
+
+#practice h3{
+  border-left:7.5px solid goldenrod;
+  padding-left:7.5px;
+
+}
+
+table{
+  width: 100%;
+  border: 1px solid gold;
+}
+caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size:1.3rem;
+}
+
+tr:nth-child(even){/*---tr is the parent---*/
+  background-color: rgba(6, 6, 6, 0.1);
+}
+
+td:nth-child(n+2){/*---to align the text in the table---*/
+  text-align:right;
+}
+
+tr:hover{ /*--to change color of a row when the user hovers over it---*/
+  background-color: rgba(6, 6, 6, 0.1);
+}
+
+th{
+  background-color: goldenrod;
+  color:#ffffff;
+  padding:7.5px;
+}
+
+td{
+  border: 1px solid gold;
+  padding: 5px;
+}
+
+#practice ol{
+  list-style-type:lower-roman;
+}
+
+#practice ul ul {
+  color:red;
+}
+
+#practice ul ul ul {
+  color:black;
+}
+
+/*---to target and element with an attribute---*/
+aside[role="complementary"]{
+  background-color: gold;
+  color:#000000;
+  padding:40px 0;
+}
+
+aside .container{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  gap: 40px;
+}
+aside .container a{
+    color:#000000;
+}
+
+aside .container a:last-child{
+  display:block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+article.widget footer{
+  display:none;
+}
+
+/*---to target footer---*/
+#colophon{
+  background-color: gold;
+  padding:5px;
+  text-align: center;
+  text-shadow: 1px 1px  #000000;
+}
+
 
 
 figure{margin:0;}
