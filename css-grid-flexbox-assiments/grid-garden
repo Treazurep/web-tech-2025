@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Screenshot</title>
+</head>
+<body>
+  <h1>CSS Diner</h1>
+  <img src="/css-grid-flexbox-assiments/assets/images/screenshots/grid-garden.png" alt="Screenshot of my CSS Diner" width="600">
+</body>
+</html>
